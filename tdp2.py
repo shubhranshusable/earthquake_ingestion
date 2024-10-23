@@ -28,8 +28,8 @@ if __name__ == '__main__':
             .config("spark.executor.memory", "4g")\
             .config("spark.driver.memory", "4g")\
             .config("spark.sql.debug.maxToStringFields", "100") \
-            .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
             .getOrCreate()
+            # .config("spark.hadoop.fs.gs.impl", "com.google.cloud.hadoop.fs.gcs.GoogleHadoopFileSystem") \
             # .config("spark.jars", "gs://hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar")\
             # .config("spark.jars.packages", "com.google.cloud.bigdataoss:gcs-connector:hadoop3-2.2.5") \
         
