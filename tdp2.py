@@ -5,9 +5,9 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, FloatType, LongType, IntegerType, ArrayType
 from pyspark.sql.functions import from_unixtime,split,col
 if __name__ == '__main__':
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = (
-        r"D:\gcp\metal-center-432709-h7-d1bb5a377b3a.json"
-    )
+    # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = (
+    #     r"D:\gcp\metal-center-432709-h7-d1bb5a377b3a.json"
+    # )
     def fetch_json_from_gcs(bucket_name, blob_name):
         """
         Fetch JSON data from GCS bucket.
